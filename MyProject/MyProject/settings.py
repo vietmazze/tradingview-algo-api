@@ -77,14 +77,9 @@ WSGI_APPLICATION = 'MyProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tradingviewproject',
-        'USER':'root',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
-        'PORT': '',
-        'OPTIONS': {
-            'sql_mode': 'STRICT_TRANS_TABLES'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR,'db.sqlite3'),
+       
         }
     }
 }
