@@ -27,7 +27,7 @@ class AlertViewSet(viewsets.ModelViewSet):
                       IsOwnerOrReadOnly]
 
     def perform_create(self,serializer):
-        seralizer.save(owner=self.request.user)
+        serializer.save(owner=self.request.user)
    
 
 
